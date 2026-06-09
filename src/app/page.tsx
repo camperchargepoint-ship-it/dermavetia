@@ -68,8 +68,9 @@ export default function Home() {
 
         <div className="relative">
           <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] bg-[#D6E0E3] shadow-2xl">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/hero-dermavetia.jpg"
+              src="/images/hero-dermavetia.jpg"
               alt="Dermatología veterinaria especializada para perros y gatos"
               className="h-full w-full object-cover"
             />
