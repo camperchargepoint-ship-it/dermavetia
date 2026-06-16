@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import type { ReactNode } from "react";
 
 import "./globals.css";
@@ -7,7 +7,14 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-body",
+});
+
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-heading",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -19,8 +26,8 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="es" className={inter.variable}>
-      <body className="bg-[#FBFBFB] text-[#254247] antialiased">
+    <html lang="es" className={`${inter.variable} ${cormorantGaramond.variable}`}>
+      <body className="bg-[var(--color-background)] text-[var(--color-primary)] antialiased">
         {children}
       </body>
     </html>

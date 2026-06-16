@@ -2,10 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Bellyna";
+  src: url("/fonts/BellynaTuberos.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #fbfbfb;
-  --foreground: #0f0f0f;
-  --font-sans: var(--font-inter);
+  --color-black: #0F0F0F;
+  --color-background: #F7F8FA;
+  --color-soft: #D7E2E6;
+  --color-secondary: #486D75;
+  --color-primary: #1F3B41;
+  --color-surface: #FFFFFF;
+  --color-muted: #6B7280;
+  --background: var(--color-background);
+  --foreground: var(--color-black);
+  --font-sans: var(--font-body);
 }
 
 * {
@@ -18,9 +33,9 @@ html {
 
 body {
   min-height: 100vh;
-  background: var(--background);
+  background: var(--color-background);
   color: var(--foreground);
-  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -30,6 +45,38 @@ a {
 }
 
 ::selection {
-  background: #d6e0e3;
-  color: #0f0f0f;
+  background: var(--color-soft);
+  color: var(--color-black);
+}
+
+.font-logo {
+  font-family: "Bellyna", serif;
+}
+
+.font-heading {
+  font-family: var(--font-heading), serif;
+}
+
+.font-body {
+  font-family: var(--font-body), sans-serif;
+}
+
+.text-brand-primary {
+  color: var(--color-primary);
+}
+
+.text-brand-secondary {
+  color: var(--color-secondary);
+}
+
+.bg-brand-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-brand-soft {
+  background-color: var(--color-soft);
+}
+
+.border-brand-soft {
+  border-color: var(--color-soft);
 }
