@@ -73,7 +73,7 @@ export default function Home() {
         <div className="relative">
           <div className="h-[52vh] min-h-[360px] max-h-[560px] overflow-hidden rounded-[2.5rem] bg-[#D6E0E3] shadow-2xl">
             <img
-              src="/images/laia/laia-paciente.PNG"
+              src="public/images/laia/laia-paciente.PNG"
               alt="Dermatología veterinaria especializada para perros y gatos"
               className="h-full w-full object-cover"
             />
