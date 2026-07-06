@@ -430,58 +430,58 @@ export default function PreviewPage() {
         <AuthorityPill className="absolute bottom-[-42px] left-1/2 z-20 w-[82%] -translate-x-1/2" />
       </section>
 
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-white pt-48 sm:pt-52 lg:pt-[14.5rem]">
         <div className="container-page">
-          <SectionHeader
-            eyebrow="Áreas"
-            title="¿Cómo puedo ayudarte?"
-          />
+          <div>
+            <SectionHeader
+              title="¿Cómo puedo ayudarte?"
+            />
+            <span className="mt-4 block h-px w-24 rounded-full bg-[#D7E2E6]" />
+          </div>
 
-          <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            <Card className="grid gap-6 p-4 sm:p-5 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-              <ImageCard
-                src="/images/laia/laia-lola.png"
-                alt=""
-                width={900}
-                height={760}
-                className="h-80 border-0 p-0 shadow-none lg:h-full"
-              />
-              <div className="p-3 sm:p-5">
-                <p className="eyebrow">Área Tutor</p>
-                <h3 className="mt-4 text-3xl font-semibold leading-tight text-[var(--color-primary)]">
-                  Área Tutor
-                </h3>
-                <p className="text-lead mt-5">
+          <div className="mt-20 grid gap-6 lg:grid-cols-2">
+            <Card className="relative min-h-[46rem] overflow-visible p-9 pb-[29rem] pt-20 sm:min-h-[48rem] sm:p-10 sm:pb-[31rem] sm:pt-20 lg:min-h-[28rem] lg:p-12 lg:pr-[20rem] lg:pb-12 xl:pr-[22rem]">
+              <span className="absolute -top-7 left-8 z-20 rounded-full bg-[#D7E2E6] px-6 py-3 text-sm font-semibold tracking-[0.08em] text-[#1F3B41] shadow-[0_16px_36px_rgba(31,59,65,0.14)] sm:text-base">
+                Área Tutor
+              </span>
+              <div className="relative z-10 max-w-xl lg:max-w-[21rem]">
+                <p className="text-lead">
                   Información clara para entender mejor los problemas de piel,
                   picor, otitis o alergias de tu perro o gato.
                 </p>
-                <Button href="/area-tutor" variant="secondary" className="mt-7">
+                <Button href="/area-tutor" className="mt-11">
                   Más información
                 </Button>
               </div>
+              <Image
+                src="/images/area-tutor.svg"
+                alt=""
+                width={700}
+                height={700}
+                className="pointer-events-none absolute -bottom-16 -right-10 z-0 h-auto w-[35rem] max-w-[136%] object-contain drop-shadow-[0_28px_45px_rgba(31,59,65,0.28)] sm:-bottom-20 sm:-right-8 sm:w-[39rem] lg:-bottom-8 lg:-right-10 lg:w-[31rem] xl:-bottom-8 xl:-right-12 xl:w-[34rem]"
+              />
             </Card>
 
-            <Card className="grid gap-6 p-4 sm:p-5 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-              <ImageCard
-                src="/images/laia/laia-microscopio.png"
-                alt=""
-                width={900}
-                height={760}
-                className="h-80 border-0 p-0 shadow-none lg:h-full"
-              />
-              <div className="p-3 sm:p-5">
-                <p className="eyebrow">Área Profesional</p>
-                <h3 className="mt-4 text-3xl font-semibold leading-tight text-[var(--color-primary)]">
-                  Área Profesional
-                </h3>
-                <p className="text-lead mt-5">
+            <Card className="relative min-h-[46rem] overflow-visible p-9 pb-[29rem] pt-20 sm:min-h-[48rem] sm:p-10 sm:pb-[31rem] sm:pt-20 lg:min-h-[28rem] lg:p-12 lg:pr-[20rem] lg:pb-12 xl:pr-[22rem]">
+              <span className="absolute -top-7 left-8 z-20 rounded-full bg-[#D7E2E6] px-6 py-3 text-sm font-semibold tracking-[0.08em] text-[#1F3B41] shadow-[0_16px_36px_rgba(31,59,65,0.14)] sm:text-base">
+                Área Profesional
+              </span>
+              <div className="relative z-10 max-w-xl lg:max-w-[21rem]">
+                <p className="text-lead">
                   Derivación de casos, segunda opinión dermatológica y
                   colaboración con clínicas veterinarias.
                 </p>
-                <Button href="/area-profesional" variant="secondary" className="mt-7">
+                <Button href="/area-profesional" className="mt-11">
                   Más información
                 </Button>
               </div>
+              <Image
+                src="/images/area-profesional.svg"
+                alt=""
+                width={700}
+                height={700}
+                className="pointer-events-none absolute -bottom-16 -right-10 z-0 h-auto w-[35rem] max-w-[136%] object-contain drop-shadow-[0_28px_45px_rgba(31,59,65,0.28)] sm:-bottom-20 sm:-right-8 sm:w-[39rem] lg:-bottom-8 lg:-right-10 lg:w-[31rem] xl:-bottom-8 xl:-right-12 xl:w-[34rem]"
+              />
             </Card>
           </div>
         </div>
