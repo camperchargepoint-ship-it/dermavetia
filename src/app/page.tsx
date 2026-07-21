@@ -43,7 +43,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <a
-              href="https://wa.me/34655286207"
+              href="https://wa.me/34630001685"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full bg-[#254247] px-5 py-2.5 text-center text-sm text-[#FBFBFB] transition hover:bg-[#0F0F0F]"
